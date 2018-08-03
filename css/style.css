@@ -18,19 +18,21 @@ body {
 }
 
 .large-screens {
-  max-width: 100vw;
+  /* width: 85vw ; */
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   border-color: lightblue;
   border-width: 2px;
-  margin: 20px;
+  margin: auto;
   padding: 10px 0px;
 }
-footer{
+
+footer {
   font-style: italic;
-  color:white;
+  color: white;
   padding: 15px;
 }
+
 h1 {
   font-size: 1.5em;
   color: white;
@@ -38,19 +40,22 @@ h1 {
 
 #signup {
   text-align: center;
+  font-size: 1.35em;
 }
 
 h2 {
-  font-size: 1.35em;
+  font-size: 1.1em;
   text-align: left;
   margin-left: 20px;
   color: white;
 }
 
 p {
-  font-size: 1.2em;
+  margin: 5px 0px 15px 16px;
+  text-align: left;
+  font-size: 1.1em;
   color: white;
-
+  width: 100%
 }
 
 li a {
@@ -129,19 +134,25 @@ label {
 }
 
 .opt {
+  font-size: .85em;
   text-align: left;
-  margin: 5px 0px 15px 10px;
+  margin: 5px 0px 5px 15px;
   position: relative;
   width: 100%;
 }
 
 legend {
+  font-size: 1.2em;
   text-align: left;
-  font-size: 1.1em;
-  margin: 5px 0px 15px 3px;
+  margin: 5px 0px 5px 10px;
+  padding-top: 15px;
   display: block;
   position: relative;
   color: white;
+}
+
+#top-p {
+  text-align: center;
 }
 
 input::placeholder {
@@ -270,13 +281,16 @@ h1 {
   height: 10.5px;
   margin: auto;
 }
+
 .field-input {
-  margin: 15px -15px;
+  font-size: .85em;
+  margin: 0px 0px 10px -15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 110%;
 }
+
 /* large screens */
 
 @media only screen and (min-width: 768px) {
@@ -289,12 +303,15 @@ h1 {
     border-radius: 5px;
     border-color: lightblue;
     border-width: 2px;
+    font-size: 1.2em;
     padding: 25px 25px;
   }
   p {
-    font-size: 1.2em;
+    margin: 5px 0px 15px 16px;
+    text-align: left;
+    font-size: 1em;
     color: white;
-
+    width: 100%
   }
   .calltoaction h2 {
     margin: auto;
@@ -312,13 +329,11 @@ h1 {
     height: 20px;
     margin: auto;
   }
-  h2 {
-    text-align: left;
-  }
-  h2 legend {
-    margin: 65px 0px 15px 0px;
+  legend {
+    margin: 5px 0px 5px 10px;
   }
   .field-input {
+    align-items: center;
     margin: 30px 0px;
     display: flex;
     flex-direction: row;
@@ -380,13 +395,8 @@ h1 {
     margin: 20px 0px;
   }
   .opt {
-    margin: 0px;
     display: flex;
     flex-direction: row;
-  }
-  legend {
-    width: 100%;
-    margin: 20px 0px;
   }
   .newlet {
     display: inline;

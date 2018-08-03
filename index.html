@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link type="text/css" rel="stylesheet" href="css/normalize.css" />
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/style.css" />
@@ -16,18 +17,19 @@
   <div class="large-screens">
     <div class="calltoaction">
       <h2 id="signup">Signup for our newsletter</h2>
-      <p>Get the Latest news on how your code is doing right in your inbox</p>
+      <p id="top-p">Get the Latest news on how your code is doing right in your inbox</p>
     </div>
-     <span id="bar"></span>
+    <span id="bar"></span>
     <form action="index.html" method="post">
-        <h2 >Contact Information</h2>
+
       <div class="contact">
 
         <fieldset>
+          <legend>Contact Information</legend>
           <div class="field-input">
             <label class="light" for="name">Full Name</label>
 
-            <input required type="text" id="name" name="user_name" placeholder="Required"  />
+            <input required type="text" id="name" name="user_name" placeholder="Required" />
           </div>
           <div class="field-input">
             <label class="light" for="email">Email Address</label>
@@ -52,7 +54,7 @@
           <div class="field-input">
             <label class="light" for="state">State</label>
 
-            <select class="select" id="state" name="user_state" >
+            <select class="select" id="state" name="user_state">
                  <option value="disabled selected">Choose State</option>
                	<option value="AL">Alabama</option>
                	<option value="AK">Alaska</option>
@@ -117,46 +119,47 @@
 
 
 
-
-      <h2>Newsletter</h2>
       <fieldset>
-        <legend>Select the newsletters you would like to recieve</legend>
-        <div class="opt">
-          <input class="newlet box" type="checkbox" id="html" value="html_news" name="user_newsletters" />
-          <label class="newlet light nl-label" for="html">HTML News</label>
+        <legend>Newsletter</legend>
+        <div>
+          <p>Select the newsletters you would like to recieve</p>
+          <div class="opt">
+            <input class="newlet box" type="checkbox" id="html" value="html_news" name="user_newsletters" />
+            <label class="newlet light nl-label" for="html">HTML News</label>
+          </div>
+          <div class="opt">
+            <input class="newlet box" type="checkbox" id="css" value="css_news" name="user_newsletters" />
+            <label class="newlet light nl-label" for="css">CSS News</label>
+          </div>
+          <div class="opt">
+            <input class="newlet box" type="checkbox" id="javascript" value="javascript_news" name="user_newsletters" />
+            <label class="newlet light nl-label" for="javascript">Javascript News</label>
+          </div>
         </div>
-        <div class="opt">
-          <input class="newlet box" type="checkbox" id="css" value="css_news" name="user_newsletters" />
-          <label class="newlet light nl-label" for="css">CSS News</label>
+
+
+        <div class="format">
+          <p>Newsletter format</p>
+          <div class="opt">
+            <input class="newlet box" type="radio" id="fhtml" value="html_format" name="user_format" />
+            <label class="light newlet nl-label" for="fhtml">HTML</label>
+          </div>
+          <div class="opt">
+            <input class="newlet box" type="radio" id="plaintext" value="plaintext_format" name="user_format" />
+            <label class="light newlet nl-label" for="plaintext">Plain text</label>
+          </div>
+
+
         </div>
-        <div class="opt">
-          <input class="newlet box" type="checkbox" id="javascript" value="javascript_news" name="user_newsletters" />
-          <label class="newlet light nl-label" for="javascript">Javascript News</label>
+
+        <div class="textarea">
+          <label class="topic" for="topics">other topics you'd like to hear about</label>
+
+          <textarea id="topics" name="user_topic"></textarea>
+
+          <button id="submit" type="submit"> Sign up</button>
         </div>
       </fieldset>
-
-
-      <fieldset class="format">
-        <legend>Newsletter format</legend>
-        <div class="opt">
-          <input class="newlet box" type="radio" id="fhtml" value="html_format" name="user_format" />
-          <label class="light newlet nl-label" for="fhtml">HTML</label>
-        </div>
-        <div class="opt">
-          <input class="newlet box" type="radio" id="plaintext" value="plaintext_format" name="user_format" />
-          <label class="light newlet nl-label" for="plaintext">Plain text</label>
-        </div>
-
-
-      </fieldset>
-
-      <div class="textarea">
-        <label class="topic" for="topics">other topics you'd like to hear about</label>
-
-        <textarea id="topics" name="user_topic"></textarea>
-
-        <button id="submit" type="submit"> Sign up</button>
-      </div>
       <footer>
         Copyright The Code Review
       </footer>
