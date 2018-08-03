@@ -18,14 +18,19 @@ body {
 }
 
 .large-screens {
+  max-width: 100vw;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   border-color: lightblue;
   border-width: 2px;
-  margin: 50px;
-  padding: 25px 0px;
+  margin: 20px;
+  padding: 10px 0px;
 }
-
+footer{
+  font-style: italic;
+  color:white;
+  padding: 15px;
+}
 h1 {
   font-size: 1.5em;
   color: white;
@@ -36,7 +41,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.45em;
+  font-size: 1.35em;
   text-align: left;
   margin-left: 20px;
   color: white;
@@ -45,6 +50,7 @@ h2 {
 p {
   font-size: 1.2em;
   color: white;
+
 }
 
 li a {
@@ -124,18 +130,17 @@ label {
 
 .opt {
   text-align: left;
-  margin: 5px 0px 15px 25px;
+  margin: 5px 0px 15px 10px;
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 legend {
   text-align: left;
-  font-size: 1.2em;
-  margin: 5px 0px 15px 25px;
+  font-size: 1.1em;
+  margin: 5px 0px 15px 3px;
   display: block;
   position: relative;
-  width: 50%;
   color: white;
 }
 
@@ -182,7 +187,7 @@ select {
 .topic {
   font-size: 1.1em;
   margin: auto;
-  margin-left: 35px;
+  margin-left: 14px;
   margin-bottom: 20px;
 }
 
@@ -259,13 +264,19 @@ h1 {
 
 #bar {
   display: block;
-  border-top: 10px solid #004080;
-  border-bottom: 5px solid #004080;
+  border-top: 5px solid #004080;
+  border-bottom: 3px solid #004080;
   width: 90%;
-  height: 20px;
+  height: 10.5px;
   margin: auto;
 }
-
+.field-input {
+  margin: 15px -15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 110%;
+}
 /* large screens */
 
 @media only screen and (min-width: 768px) {
@@ -279,6 +290,11 @@ h1 {
     border-color: lightblue;
     border-width: 2px;
     padding: 25px 25px;
+  }
+  p {
+    font-size: 1.2em;
+    color: white;
+
   }
   .calltoaction h2 {
     margin: auto;
@@ -342,14 +358,12 @@ h1 {
     -webkit-transition: width .5s, height .5s;
     transition: width .5s, height .5s;
   }
-
-
   #topics:focus {
     border: 4px solid #008e94;
     background-color: white;
     width: 102%;
     height: 12em;
-}
+  }
   #submit {
     font-size: 1.5em;
     margin-bottom: 40px;
